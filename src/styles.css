@@ -1,0 +1,269 @@
+
+@import "tailwindcss";
+/* ---------- Global Styles ---------- */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('./mine.jpg') no-repeat center top fixed;
+  background-size: cover;
+  background-position-y: -270px;
+  color: #333;
+}
+
+/* ---------- Header ---------- */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #00bcd4;
+  color: white;
+  padding: 20px;
+  border-bottom: 5px solid #333;
+}
+
+.logo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 60%;
+}
+
+.title {
+  flex-grow: 1;
+  text-align: center;
+}
+
+/* ---------- Navigation ---------- */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 12px 0;
+}
+
+nav a {
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* ---------- Login Page ---------- */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #e0f7fa;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-container {
+  background-color: #ffffff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 650px;
+}
+
+.login-container h2 {
+  text-align: left;
+  color: #00bcd4;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f1f3f5;
+  font-size: 14px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 12px;
+  background-color: #ff5722;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background-color: #e64a19;
+}
+
+/* ---------- Booking Section ---------- */
+section#booking {
+  padding: 40px 20px;
+}
+
+.form-container {
+  background-color: white;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  margin-top: 0;
+  color: #00bcd4;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-container input,
+.form-container select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  background-color: #f8f9fa;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff7043;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #ff5722;
+}
+
+/* ---------- Services Section ---------- */
+.services-container {
+  background-color: #ffffff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 700px;
+  margin: 40px auto;
+}
+
+.services-container h2 {
+  color: #00bcd4;
+  font-size: 27px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.services-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.services-container th,
+.services-container td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.services-container th {
+  background-color: #00bcd4;
+  color: white;
+}
+
+.services-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff5722;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.services-container button:hover {
+  background-color: #e64a19;
+}
+
+/* ---------- Payment Section ---------- */
+section#payment {
+  padding: 40px 20px;
+}
+
+section#payment .form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+section#payment .form-container h2 {
+  margin-top: 0;
+  color: #00bcd4;
+  font-size: 1.8em;
+  margin-bottom: 25px;
+}
+
+section#payment .form-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+section#payment .form-container input,
+section#payment .form-container select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  background-color: #f8f9fa;
+}
+
+section#payment .form-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff7043;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+section#payment .form-container button:hover {
+  background-color: #ff5722;
+}
